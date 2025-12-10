@@ -1,0 +1,40 @@
+- name: MAED
+  url: "/maed/"
+  logo: "/assets/img/MAED_Logo.png"
+
+- name: OnSSET
+  url: "/onsset/"
+  logo: "/assets/img/OnSSET_Logo.png"
+
+- name: OnStove
+  url: "/onstove/"
+  logo: "/assets/img/OnStove_logosmall.png"
+
+- name: OSeMOSYS
+  url: "/osemosys/"
+  logo: "/assets/img/osemosys_logo.png"
+
+- name: FFRM
+  url: "/ffrm/"
+  logo: "/assets/img/FFRM_Logo.png"
+
+- name: PathCalc
+  url: "/pathcalc/"
+  logo: "/assets/img/Pathcalc_Logo.png"
+
+- name: NISMOD
+  url: "/nismod/"
+  logo: "/assets/img/NISMOD_Logo.png"
+
+- name: MINFin
+  url: "/minfin/"
+  logo: "/assets/img/MINFin_Logo.png"
+
+- name: FinTrack
+  url: "/fintrack/"
+  logo: "/assets/img/FinTrack_Logo.png"
+
+- name: FINPLAN
+  url: "/finplan/"
+  logo: "/assets/img/FINPLAN_Logo.png"
+
