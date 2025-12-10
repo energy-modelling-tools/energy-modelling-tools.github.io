@@ -12,3 +12,11 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
   {% seo %}
 </head>
+
+<body{% if page.id %} id="{{ page.id }}"{% endif %} class="{{ page.layout }}">
+
+  <div class="page-header bg-white py-5 fade-in-center pt-2 pb-3">
+    <div class="container-lg">
+  
+    <!-- .full-width here gets closed on support-page.html and home.html layouts -->
+           
