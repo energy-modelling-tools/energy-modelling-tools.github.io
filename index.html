@@ -13,7 +13,7 @@ title: Energy Modeling Tools
 <section class="py-5">
   <div class="container-lg p-responsive">
     <!-- Grid System -->
-    <div class="d-flex flex-wrap flex-items-center flex-justify-center"  style="gap: 30px;">
+    <div class="d-flex flex-wrap flex-items-center flex-justify-center"  style="gap: 20px;">
       {% for tool in site.data.tools %}
       <div class="col-md-2 col-sm-5 text-center animate-in mb-4">
         <a href="{{ tool.url | relative_url }}" class="d-block tool-link">
@@ -32,8 +32,8 @@ title: Energy Modeling Tools
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 150px; /* Fixed height for consistency */
-        padding: 10px;
+        height: 140px; /* Fixed height for consistency */
+        padding: 6px;
     }
     
     .tool-link:hover {
@@ -41,8 +41,8 @@ title: Energy Modeling Tools
     }
 
     .tool-logo {
-        max-height: 100%;
-        max-width: 100%;
+        max-height: 120%;
+        max-width: 120%;
         object-fit: contain; /* Ensure logo fits without distortion */
     }
     .animate-in,
