@@ -17,7 +17,7 @@
     var b = d.getElementsByTagName('body')[0];
     var s = d.createElement("script"); s.async = true;
     var v = !("IntersectionObserver" in w) ? "8.8.0" : "10.9.0";
-    s.src = "https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/" + v + "/lazyload.min.js";
+    s.src = "{{ '/assets/js/lazyload.min.js' | relative_url }}";
     w.lazyLoadOptions = {};
     b.appendChild(s);
   }(window, document));
