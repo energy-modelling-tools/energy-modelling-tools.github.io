@@ -71,10 +71,21 @@ title: Energy Modelling Tools
 </style>
     
 <script>
+  // Logo animations:
     document.addEventListener('DOMContentLoaded', () => {
         document.querySelectorAll('.animate-in, .fade-in-center').forEach((el, i) => {
-        el.style.setProperty('--animation-delay', (i * 0.05) + 's'); // 可选：阶梯延时
-        el.classList.add('play'); // 直接触发动画，无需滚动
+        el.style.setProperty('--animation-delay', (i * 0.05) + 's'); 
+        el.classList.add('play'); 
         });
     });
 </script>
+<noscript>
+  <style>
+    .animate-in,
+    .fade-in-center {
+      opacity: 1 !important;
+      transform: none !important;
+      animation: none !important;
+    }
+  </style>
+</noscript>
