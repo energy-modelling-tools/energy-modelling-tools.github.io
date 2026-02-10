@@ -1,7 +1,7 @@
 title: "Energy Modeling Tools"
 description: "A hub for open-source energy modeling tools"
 baseurl: ""
-url: "https://energy-modeling-tools.github.io"
+url: "https://energy-modelling-tools.github.io"
 
 markdown: kramdown
 theme: jekyll-theme-primer
