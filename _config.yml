@@ -4,7 +4,8 @@ baseurl: ""
 url: "https://energy-modelling-tools.github.io"
 
 markdown: kramdown
-theme: jekyll-theme-primer
+theme: null
+remote_theme: energy-modelling-tools/page-template@main
 
 sass:
   style: :compressed
@@ -14,6 +15,7 @@ sass:
     - node_modules/@primer/view-components/app/components/
 
 plugins:
+  - jekyll-remote-theme
   - jekyll-avatar
   - jekyll-redirect-from
   - jekyll-seo-tag

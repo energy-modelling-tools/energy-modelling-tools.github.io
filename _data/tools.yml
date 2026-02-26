@@ -1,6 +1,6 @@
 - name: CLEWs
   url: "/clews/"
-  logo: "/assets/img/CLEWs_logo.svg"
+  logo: "/assets/img/CLEWs.svg"
 
 - name: MAED
   url: "/maed/"
