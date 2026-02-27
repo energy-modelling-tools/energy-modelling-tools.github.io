@@ -3,19 +3,19 @@ layout: home
 title: Energy Modelling Tools
 ---
 
-<div class="container-lg p-responsive py-4 py-lg-6 my-xl-4 text-center">
+<div class="container-lg p-responsive pt-2 pt-lg-3 pb-2 pb-lg-3 my-0 text-center">
 <h1 class="alt-h1 mb-4">Energy Modelling Tools</h1>
   <p class="text-gray hero-intro">
     A suite of open-source tools to support energy planning, investment, and policy analysis.
   </p>
 </div>
 
-<section class="py-5">
+<section class="pt-2 pb-3">
   <div class="container-lg p-responsive">
     <!-- Grid System -->
     <div class="d-flex flex-wrap flex-items-center flex-justify-center tool-grid">
       {% for tool in site.data.tools %}
-      <div class="col-md-2 col-sm-5 text-center animate-in mb-4">
+      <div class="col-md-2 col-sm-5 text-center animate-in mb-0">
         <a href="{{ tool.url | relative_url }}" class="d-block tool-link">
           <img src="{{ tool.logo | relative_url }}" alt="{{ tool.name }}" class="img-fluid tool-logo">
         </a>
@@ -32,8 +32,8 @@ title: Energy Modelling Tools
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 140px; /* Fixed height for consistency */
-        padding: 6px;
+        height: clamp(104px, 15vh, 132px);
+        padding: 4px;
     }
     
     .tool-link:hover {
@@ -41,17 +41,33 @@ title: Energy Modelling Tools
     }
 
     .tool-logo {
-        max-height: 95%;
-        max-width: 95%;
+        max-height: 90%;
+        max-width: 90%;
         object-fit: contain; /* Ensure logo fits without distortion */
     }
     .hero-intro {
       max-width: 800px;
       margin: 0 auto;
-      font-size: 1.25rem;
+      font-size: clamp(1.05rem, 1.6vw, 1.25rem);
     }
     .tool-grid {
-      gap: 28px;
+      column-gap: clamp(28px, 4vw, 40px);
+      row-gap: clamp(12px, 2vh, 18px);
+    }
+
+    /* Home footer is a bit tall for one-screen layouts */
+    body.home footer p {
+      margin-top: 16px !important;
+      padding-top: 16px !important;
+    }
+
+    /* Make the gradient background fill the full viewport on the home page */
+    body.home .page-header {
+      min-height: 100vh;
+    }
+    body.home .page-header::before {
+      background-size: cover;
+      background-position: center top;
     }
     .animate-in,
     .fade-in-center {
