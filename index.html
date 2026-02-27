@@ -3,7 +3,7 @@ layout: home
 title: Energy Modelling Tools
 ---
 
-<div class="container-lg p-responsive pt-2 pt-lg-3 pb-2 pb-lg-3 my-0 text-center">
+<div class="container-lg p-responsive pt-2 pt-lg-3 pb-2 pb-lg-3 my-2 text-center">
 <h1 class="alt-h1 mb-4">Energy Modelling Tools</h1>
   <p class="text-gray hero-intro">
     A suite of open-source tools to support energy planning, investment, and policy analysis.
@@ -15,7 +15,7 @@ title: Energy Modelling Tools
     <!-- Grid System -->
     <div class="d-flex flex-wrap flex-items-center flex-justify-center tool-grid">
       {% for tool in site.data.tools %}
-      <div class="col-md-2 col-sm-5 text-center animate-in mb-0">
+      <div class="col-md-2 col-sm-5 text-center animate-in mb-2">
         <a href="{{ tool.url | relative_url }}" class="d-block tool-link">
           <img src="{{ tool.logo | relative_url }}" alt="{{ tool.name }}" class="img-fluid tool-logo">
         </a>
