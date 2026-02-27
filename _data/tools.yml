@@ -1,11 +1,3 @@
-- name: CLEWs
-  url: "/clews/"
-  logo: "/assets/img/tools/clews.svg"
-
-- name: MAED
-  url: "/maed/"
-  logo: "/assets/img/tools/maed.svg"
-
 - name: OnSSET
   url: "/onsset/"
   logo: "/assets/img/tools/onsset.svg"
@@ -14,31 +6,42 @@
   url: "/onstove/"
   logo: "/assets/img/tools/onstove.svg"
 
+- name: NISMOD
+  url: "/nismod/"
+  logo: "/assets/img/tools/nismod.svg"
+
+- name: MAED
+  url: "/maed/"
+  logo: "/assets/img/tools/maed.svg"
+
 - name: OSeMOSYS
   url: "/osemosys/"
   logo: "/assets/img/tools/osemosys.svg"
 
-- name: FFRM
-  url: "/ffrm/"
-  logo: "/assets/img/tools/ffrm.svg"
+- name: CLEWs
+  url: "/clews/"
+  logo: "/assets/img/tools/clews.svg"
 
 - name: PathCalc
   url: "/pathcalc/"
   logo: "/assets/img/tools/pathcalc.svg"
 
-- name: NISMOD
-  url: "/nismod/"
-  logo: "/assets/img/tools/nismod.svg"
-
-- name: MINFin
-  url: "/minfin/"
-  logo: "/assets/img/tools/minfin.svg"
+- name: FFRM
+  url: "/ffrm/"
+  logo: "/assets/img/tools/ffrm.svg"
 
 - name: FinTrack
   url: "/fintrack/"
   logo: "/assets/img/tools/fintrack.svg"
 
+- name: MINFin
+  url: "/minfin/"
+  logo: "/assets/img/tools/minfin.svg"
+
 - name: FINPLAN
   url: "/finplan/"
   logo: "/assets/img/tools/finplan.svg"
+
+
+
 
