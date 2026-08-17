@@ -1,0 +1,31 @@
+name: "Edit YAML file"
+description: "Edit the tool grid on the homepage. Drag logos into the issue after it opens."
+title: "YAML Edit: "
+labels: ["yml-edit"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        After you submit, this issue is filled with **one box per tool**.
+
+        - Logos: drag into that tool's text box → saved to `assets/img/tools/`
+        - **Delete a tool:** remove that whole `#### Tool:` block
+        - **Reorder the grid:** cut and paste whole blocks — the order here is the order on the page
+        - `url` is the path on this site, for example `/onsset/`
+  - type: dropdown
+    id: yml_file
+    attributes:
+      label: "Which YAML file do you want to edit?"
+      description: "Filename stays the same. The note in brackets is what that file usually changes."
+      options:
+        - "_data/tools.yml (tool logos and order on the homepage)"
+    validations:
+      required: true
+  - type: textarea
+    id: comment
+    attributes:
+      label: "Additional comment"
+      description: "Anything else you'd like to note"
+      placeholder: "Optional comment..."
+    validations:
+      required: false

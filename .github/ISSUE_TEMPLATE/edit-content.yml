@@ -1,0 +1,31 @@
+name: "Edit content (auto prefill)"
+description: "Edit the homepage text. The issue is filled after you submit."
+title: "Edit request: "
+labels: ["content-edit"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        After you submit, each section is one box. `heading:` is the title on the page.
+
+        - Edit the title on the `heading:` line
+        - Edit the paragraph inside the `text` box
+
+        **To add, remove, or reorder the tool logos**, use **Edit YAML file** and choose `_data/tools.yml`.
+  - type: dropdown
+    id: file
+    attributes:
+      label: "Which file do you want to edit?"
+      description: "Filename stays the same. The note in brackets is what that file usually changes."
+      options:
+        - "index.html (homepage intro text)"
+    validations:
+      required: true
+  - type: textarea
+    id: comment
+    attributes:
+      label: "Additional comment"
+      description: "Anything else you'd like to note"
+      placeholder: "Optional comment..."
+    validations:
+      required: false
